@@ -1,0 +1,19 @@
+@font-face {
+    src: url(Ressources/ytk.ttf);
+    font-family: yk;
+}
+
+.logo {
+    width: 50px;
+    background-color: pink;
+}
+
+h1 {
+    text-align: center;
+    background-color: pink;
+    font-family: yk, sans-serif;
+    
+}
+p {
+    
+}
