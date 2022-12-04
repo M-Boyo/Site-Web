@@ -25,6 +25,11 @@ header {
     text-align: center;
 }
 
+header li {
+    display: inline;
+    padding: clamp(0,2em,5em);
+}
+
 body {
     padding: clamp(-10px    ,3%,30%);
     padding-top: 2em;
