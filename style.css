@@ -13,7 +13,7 @@ a:active {
 
 
 .logo {
-    width: 150px;
+    width: 10em;
 }
 .internet {
     padding-bottom: 20px;
@@ -24,6 +24,7 @@ header {
     padding-bottom: 1em;
     text-align: center;
 }
+
 
 header li {
     display: inline;
@@ -57,7 +58,7 @@ p {
     background-position-y: 4px;
 }
 
-.footer {
+footer {
   display: flex;
     font-size: 10px;
     text-align: right;
@@ -71,11 +72,10 @@ p {
 
 }
 
+
 .Name {
   position: absolute;
-  right: 1em;
-
-  color: red
-
-
+  right: 2em;
+  color: white;
+  padding-bottom: em;
 }
