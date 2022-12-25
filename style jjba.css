@@ -15,7 +15,7 @@ a:visited {
     color: darkorchid;}
 a:active {
     background-color: aliceblue;}
-    
+
 /* HEADER 
 ################################
 ################################
@@ -32,7 +32,7 @@ a:active {
     align-items: center;
     width: auto;
     height: 3.5em;
-    background-color: rgba(255, 0, 0, 0);
+    background-color: rgba(0, 81, 255, 0);
 
 }
 header {
@@ -58,71 +58,67 @@ header li {
 ################################
 */
 
+
 body {
+    padding: clamp(-10px    ,3%,30%);
+    padding-top: 2em;
     color: azure;
     font-family: nokia;
     font-size: medium;
-    margin: 0;
 }
 
-p {
-    color: #FF74B1;
-    padding-left: 1em;
-}
-
-
-
-
-/* FOOTER 
-################################
-################################
-################################
-################################
-*/
-
-.belly {
-    background-color: #ffffff;
-    
-}
-
-.L1 {
-    color: #a1ffdc;
-}
-
-.L1 li{
-    list-style: none;
-    padding-left: 19px;
-    background-image: url(Ressources/4a0.gif);
-    background-repeat: no-repeat;
-    background-size: 13px;
-    background-position-y: 4px;
-}
-
-
-/* FOOTER 
-################################
-################################
-################################
-################################
-*/
-
-footer {
-  display: flex;
-    font-size: 10px;
-    text-align: right;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: calc(100% - 2em);
+.article {
+    background: #fab3fe36;
     padding: 1em;
-    background: url("Ressources/sparkle_alt.gif");
-    border-top: 1px solid gray;
-
+    padding-top: .25em;
+    border-radius: 5px;
 }
 
 
+h2 {
+    -webkit-text-stroke: 1px rgb(238, 82, 255);
+    text-align: center;
+    color: #a7fff8;
+    background: #ffffff4e;
+    padding-top: .1em;
+    border-radius: 5px;
+    font-size: 50px;
+
+}
+
+.image {
+    width: clamp(5%, 40em, 60%);
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #a7fff8;
+  }
+
+
+
+/* FOOTER 
+################################
+################################
+################################
+################################
+*/
+
+  footer {
+    display: flex;
+      font-size: 10px;
+      text-align: right;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: calc(100% - 2em);
+      padding: 1em;
+      background: url("Ressources/sparkle_alt.gif");
+      border-top: 1px solid gray;
+  
+}
+  
+  
 .Name {
-  position: absolute;
-  right: 2em;
-  color: white;
+    position: absolute;
+    right: 2em;
+    color: white;
 }
