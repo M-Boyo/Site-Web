@@ -59,30 +59,19 @@ header li {
 */
 
 body {
-    color: azure;
+    padding-top: 2em;
+    color: white;
     font-family: nokia;
     font-size: medium;
-    margin: 0;
+    margin:0;
 }
-
-p {
-    color: #FF74B1;
-    padding-left: 1em;
-}
-
-
-
-
-/* FOOTER 
-################################
-################################
-################################
-################################
-*/
 
 .belly {
-    background-color: #ffffff;
-    
+    background-color: #ffffff00;
+}
+
+.belly p {
+    color: #FF74B1;
 }
 
 .L1 {
@@ -107,10 +96,10 @@ p {
 */
 
 footer {
-  display: flex;
+    display: flex;
     font-size: 10px;
     text-align: right;
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: calc(100% - 2em);
