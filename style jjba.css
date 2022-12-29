@@ -61,7 +61,6 @@ header li {
 
 body {
     margin:0;
-    padding: clamp(-10px    ,3%,30%);
     padding-top: 2em;
     color: white;
     font-family: nokia;
@@ -70,26 +69,31 @@ body {
     min-height: 100vh;
 }
 
-.content-wrap {
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}    
+#content-wrap {
+    padding: 1em;
     padding-bottom: 2.5rem;
 }
 
 
 .article {
-    background: #fab3fe36;
+    max-width: 50%;
+    outline: auto;
+    background: #ffffff6f;
     padding: 1em;
-    padding-top: .25em;
-    border-radius: 5px;
+    padding-top: 2.5em;
 }
 
 
 h2 {
-    -webkit-text-stroke: 1px rgb(238, 82, 255);
+    outline: auto;
+    background: #ffffff6f;
     text-align: center;
     color: #a7fff8;
-    background: #ffffff4e;
     padding-top: .1em;
-    border-radius: 5px;
     font-size: 50px;
 
 }
