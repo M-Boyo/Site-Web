@@ -59,11 +59,22 @@ header li {
 */
 
 body {
+    margin:0;
     padding-top: 2em;
     color: white;
     font-family: nokia;
     font-size: medium;
-    margin:0;
+    position: relative;
+    min-height: 100vh;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}    
+#content-wrap {
+    padding: 1em;
+    padding-bottom: 2.5rem;
 }
 
 .belly {
@@ -99,11 +110,12 @@ footer {
     display: flex;
     font-size: 10px;
     text-align: right;
-    position: relative;
+    position: absolute;
     left: 0;
     bottom: 0;
-    width: calc(100% - 2em);
-    padding: 1em;
+    border: 0px;
+    width: 100%;
+
     background: url("Ressources/sparkle_alt.gif");
     border-top: 1px solid gray;
 
