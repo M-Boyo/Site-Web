@@ -16,6 +16,9 @@ a:visited {
 a:active {
     background-color: aliceblue;}
 
+em {
+    color: #a1ffdc;
+}
 /* HEADER 
 ################################
 ################################
@@ -36,8 +39,6 @@ a:active {
 
 }
 header {
-    padding-top: 5px;
-    padding-bottom: 3em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,33 +67,45 @@ body {
     font-family: nokia;
     font-size: medium;
     position: relative;
-    min-height: 100vh;
+    min-height: calc(100vh - 2em);
 }
 
 #page-container {
     position: relative;
-    min-height: 100vh;
+    min-height: calc(100vh - calc(2.5rem + 2em));
 }    
 #content-wrap {
     padding: 1em;
-    padding-bottom: 2.5rem;
+    padding-bottom: calc(2.5rem + 2em);
 }
 
 
 .article {
-    outline: auto;
-    background: #ffffff6f;
+    border-bottom:1px dotted #a1ffdc;
+    background: #ffffff00;
     padding: 1em;
-    padding-top: 1px;
+    border-radius: 10px;
+}
+ 
+.articleup {
+    display: flex;
 }
 
+.audiotheme {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 h2 {
-    outline: auto;
-    background: #ffffff6f;
+    border-bottom: 1px dotted #a1ffdc;
+    border-top: 1px dotted #a1ffdc;;
+    background: #ffffff00;
     text-align: center;
-    color: #a7fff8;
-    padding-top: .1em;
+    border-radius: 10px;
+    color: #6cf97a;
+    padding-top: 0em;
     font-size: 50px;
 
 }
@@ -105,7 +118,6 @@ h2 {
   }
 
 
-
 /* FOOTER 
 ################################
 ################################
@@ -113,7 +125,8 @@ h2 {
 ################################
 */
 
-  footer {
+footer {
+    height: 5em;
     display: flex;
     font-size: 10px;
     text-align: right;
@@ -125,13 +138,43 @@ h2 {
 
     background: url("Ressources/sparkle_alt.gif");
     border-top: 1px solid gray;
+} 
 
-  
+
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-  
-.Name {
-    position: absolute;
-    right: 2em;
-    color: white;
+.fp {
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    height: 1em;
+}
+
+.footerico {
+    margin: 0;
+    padding: 0;
+    height: 1em; 
+}
+@media (orientation:portrait){
+    .ytbjojo {
+        width: 40%;
+
+    }
+    .image {
+        aspect-ratio: 16/9;
+        width: 400px;
+        
+    }
+
+    .fp{
+        font-size: large;
+    }
+
+    footer {
+
+    }
 }

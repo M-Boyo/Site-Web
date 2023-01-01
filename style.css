@@ -15,7 +15,10 @@ a:visited {
     color: darkorchid;}
 a:active {
     background-color: aliceblue;}
-    
+
+em {
+    color  :#13ff9d;
+}
 /* HEADER 
 ################################
 ################################
@@ -25,18 +28,17 @@ a:active {
 
 .logo {
     width: 10em;
-    padding: 1em;
+    padding: .5em;
     background-color: rgba(255, 0, 0, 0);
 }
 .internet {
     align-items: center;
     width: auto;
     height: 3.5em;
-    background-color: rgba(255, 0, 0, 0);
+    background-color: rgb(255, 0, 0, 0);
 
 }
 header {
-    padding-top: 5px;
     padding-bottom: 3em;
     display: flex;
     justify-content: center;
@@ -65,26 +67,40 @@ body {
     font-family: nokia;
     font-size: medium;
     position: relative;
-    min-height: 100vh;
+    min-height: calc(100vh - 2em);
 }
 
 #page-container {
     position: relative;
-    min-height: 100vh;
+    min-height: calc(100vh - calc(2.5rem + 2em));
 }    
 #content-wrap {
     padding: 1em;
-    padding-bottom: 2.5rem;
+    padding-bottom: calc(2.5rem + 2em);
 }
 
 .belly {
+    display: flex;
+    justify-content: space-evenly; 
     background-color: #ffffff00;
+    height: 100%;
+}
+
+@media (orientation:portrait){
+    .belly {
+        flex-direction:column;
+    }
+
+
 }
 
 .belly p {
     color: #FF74B1;
 }
 
+.parag {
+    font-size:x-large;
+}
 .L1 {
     color: #a1ffdc;
 }
@@ -118,12 +134,11 @@ footer {
 
     background: url("Ressources/sparkle_alt.gif");
     border-top: 1px solid gray;
+} 
 
-}
 
-
-.Name {
-  position: absolute;
-  right: 2em;
-  color: white;
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
