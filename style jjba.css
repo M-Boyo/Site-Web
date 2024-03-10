@@ -1,5 +1,5 @@
 @font-face {
-    src: url(Ressources/nokiafc22.ttf);
+    src: url(Ressources/KimsBitHand.ttf);
     font-family: nokia;
 }
 
@@ -43,6 +43,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: rgba(245, 245, 220, 0);
+    width: 100%;
 }
 
 
@@ -62,12 +63,11 @@ header li {
 
 body {
     margin:0;
-    padding-top: 2em;
     color: white;
     font-family: nokia;
     font-size: medium;
     position: relative;
-    min-height: calc(100vh - 2em);
+    width: auto;
 }
 
 #page-container {
@@ -81,14 +81,18 @@ body {
 
 
 .article {
-    border-bottom:1px dotted #a1ffdc;
-    background: #ffffff00;
-    padding: 1em;
+    border-bottom: 4px solid rgb(53, 38, 118);
+    background: rgb(22, 0, 58);
+    padding: 1%;
     border-radius: 10px;
 }
  
 .articleup {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
 }
 
 .audiotheme {
@@ -98,23 +102,30 @@ body {
     align-items: center;
 }
 
+audio {
+    max-width: 80%;
+}
+
 h2 {
-    border-bottom: 1px dotted #a1ffdc;
-    border-top: 1px dotted #a1ffdc;;
-    background: #ffffff00;
+    margin: 10px;
+    background: rgb(53, 38, 118);
     text-align: center;
-    border-radius: 10px;
-    color: #6cf97a;
-    padding-top: 0em;
+    border: rgb(53, 38, 118) solid;
+    border-radius: 5px;
+    color: #89DAFF;
+    padding: 5px;
     font-size: 50px;
 
 }
 
 .image {
-    width: clamp(5%, 40em, 60%);
-    height: auto;
+    max-width: 50%;
+    height: 50%;
+    
     border-radius: 5px;
-    border: 2px solid #a7fff8;
+    border: 2px solid ;
+    border-bottom: 4px solid;   
+    border-color: rgb(53, 38, 118);
   }
 
 
@@ -159,22 +170,49 @@ footer {
     padding: 0;
     height: 1em; 
 }
+
 @media (orientation:portrait){
+    .internet:last-child {
+        width: 0;
+    }
+    
     .ytbjojo {
         width: 40%;
 
     }
     .image {
-        aspect-ratio: 16/9;
-        width: 400px;
-        
+        max-width: 90%;
     }
 
+    .articleup {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+    
+    .audiotheme {
+        margin: 16px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
     .fp{
         font-size: large;
     }
 
     footer {
+    display: flex;
+    font-size: 10px;
+    text-align: right;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border: 0px;
+    width: 100%;
 
+    background: url("Ressources/sparkle_alt.gif");
+    border-top: 1px solid gray;
     }
 }
