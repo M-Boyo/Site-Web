@@ -1,11 +1,7 @@
 @font-face {
-    src: url(Ressources/nokiafc22.ttf);
+    src: url(Ressources/KimsBitHand.ttf);
     font-family: nokia;
-}
-
-body {
-    background-image: url("Ressources/sparkle.gif");
-}
+ }
 
 a:link {
     color: #fe61c2;}
@@ -19,6 +15,14 @@ a:active {
 em {
     color  :#13ff9d;
 }
+
+:root {
+    --outline-content: 3px solid rgb(62, 62, 62);
+}
+
+h2 {
+    color: #fe61c2;
+}
 /* HEADER 
 ################################
 ################################
@@ -27,23 +31,25 @@ em {
 */
 
 .logo {
-    width: 10em;
+    width: 8em;
     padding: .5em;
     background-color: rgba(255, 0, 0, 0);
 }
 .internet {
     align-items: center;
     width: auto;
-    height: 3.5em;
+    height: 2.5em;
     background-color: rgb(255, 0, 0, 0);
 
 }
 header {
-    padding-bottom: 3em;
+    padding-top: 1em;
+    margin-bottom: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(245, 245, 220, 0);
+
 }
 
 
@@ -51,6 +57,10 @@ header li {
     display: inline;
     padding: clamp(0,2em,5em);
     align-content: center;
+}
+
+html {
+    height: 100%
 }
 
 /* BODY 
@@ -61,41 +71,61 @@ header li {
 */
 
 body {
+    zoom:120%;
     margin:0;
-    padding-top: 2em;
+    padding: 11%;
+    padding-bottom: 0;
+    padding-top: 0;
     color: white;
-    font-family: nokia;
-    font-size: medium;
+    font-family: nokia; 
+    font-size: large;
     position: relative;
-    min-height: calc(100vh - 2em);
-}
+
+    background-color: black;
+    align-items: center;
+    height: 100%;
+    }
+
+
 
 #page-container {
     position: relative;
-    min-height: calc(100vh - calc(2.5rem + 2em));
-}    
+    background-color: rgba(255, 0, 0, 0);
+    height: 100%;
+    filter: drop-shadow(3px 3px rgb(62, 62, 62));
+    max-height: 1000px;
+  }
+
 #content-wrap {
-    padding: 1em;
-    padding-bottom: calc(2.5rem + 2em);
+    border-radius: 10px ;
+    border: var(--outline-content);
+    padding: 0;
+    background-image: url(Ressources/sparkle.gif);
+    height: 95%;
+    filter: blur(); /* ???? Ne pas supprimer le footer bug sans ça */
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
+
 
 .belly {
     display: flex;
-    justify-content: space-evenly; 
-    background-color: #ffffff00;
-    height: 100%;
-}
-
-@media (orientation:portrait){
-    .belly {
-        flex-direction:column;
-    }
-
+    justify-content: space-around;
+    background-color: #ffffff00;    
+    height: 90%;
 
 }
 
 .belly p {
     color: #FF74B1;
+}
+
+iframe {
+    border-radius: 5px;
+    border: 2px solid ;
+    border-bottom: 4px solid;   
+    border-color: rgb(53, 38, 118);
+    max-height: 200px;
 }
 
 .parag {
@@ -127,18 +157,44 @@ footer {
     font-size: 10px;
     text-align: right;
     position: absolute;
+    
     left: 0;
     bottom: 0;
     border: 0px;
     width: 100%;
-
-    background: url("Ressources/sparkle_alt.gif");
-    border-top: 1px solid gray;
+    flex-direction: column;
+    background: black;
+    border-top: 1px hidden beige;
+    border-radius: 0px 0px 8px 8px;
 } 
 
+.line-blur{
+    border: 20px solid black;
+    border-left: 0;
+    border-right: 0;
+    filter: blur(15px);
+    position: relative;
+}
 
 .info{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    position: relative;
+    font-size: small;
+}
+
+
+/* Portrait 
+################################
+################################
+################################
+################################
+*/
+
+@media (orientation:portrait){
+    .belly {
+        flex-direction:column;
+    }
+
 }

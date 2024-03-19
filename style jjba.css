@@ -15,7 +15,6 @@ a:visited {
     color: darkorchid;}
 a:active {
     background-color: aliceblue;}
-
 em {
     color: #a1ffdc;
 }
@@ -68,11 +67,13 @@ body {
     font-size: medium;
     position: relative;
     width: auto;
+    
 }
+
 
 #page-container {
     position: relative;
-    min-height: calc(100vh - calc(2.5rem + 2em));
+    aspect-ratio: 4/3;
 }    
 #content-wrap {
     padding: 1em;
@@ -83,8 +84,10 @@ body {
 .article {
     border-bottom: 4px solid rgb(53, 38, 118);
     background: rgb(22, 0, 58);
-    padding: 1%;
+    padding: 16px;
+    padding-top: 8px;
     border-radius: 10px;
+    max-width: 500px;
 }
  
 .articleup {
@@ -100,6 +103,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
 }
 
 audio {
@@ -137,7 +141,6 @@ h2 {
 */
 
 footer {
-    height: 5em;
     display: flex;
     font-size: 10px;
     text-align: right;
@@ -158,24 +161,8 @@ footer {
     justify-content: space-evenly;
 }
 
-.fp {
-    display: inline-flex;
-    justify-content: center;
-    align-content: center;
-    height: 1em;
-}
-
-.footerico {
-    margin: 0;
-    padding: 0;
-    height: 1em; 
-}
-
 @media (orientation:portrait){
-    .internet:last-child {
-        width: 0;
-    }
-    
+
     .ytbjojo {
         width: 40%;
 
@@ -203,16 +190,15 @@ footer {
     }
 
     footer {
-    display: flex;
-    font-size: 10px;
-    text-align: right;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    border: 0px;
-    width: 100%;
-
-    background: url("Ressources/sparkle_alt.gif");
-    border-top: 1px solid gray;
+        display: flex;
+        font-size: 10px;
+        text-align: right;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border: 0px;
+        width: 100%;
+        background: url("Ressources/sparkle_alt.gif");
+        border-top: 1px solid gray;
     }
 }
