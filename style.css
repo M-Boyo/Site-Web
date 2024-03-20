@@ -1,5 +1,5 @@
 @font-face {
-    src: url(Ressources/KimsBitHand.ttf);
+    src: url(/Ressources/KimsBitHand.ttf);
     font-family: nokia;
  }
 
@@ -100,7 +100,7 @@ body {
     border-radius: 10px ;
     border: var(--outline-content);
     padding: 0;
-    background-image: url(Ressources/sparkle.gif);
+    background-image: url(/Ressources/sparkle.gif);
     height: 95%;
     filter: blur(); /* ???? Ne pas supprimer le footer bug sans ça */
     margin-top: 15px;
@@ -138,7 +138,7 @@ iframe {
 .L1 li{
     list-style: none;
     padding-left: 19px;
-    background-image: url(Ressources/4a0.gif);
+    background-image: url(/Ressources/4a0.gif);
     background-repeat: no-repeat;
     background-size: 13px;
     background-position-y: 4px;
