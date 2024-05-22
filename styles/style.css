@@ -209,9 +209,8 @@ body {
 iframe {
     border-radius: 5px;
     border: 2px solid ;
-    border-bottom: 4px solid;   
+    border-bottom: 4px solid;
     border-color: rgb(53, 38, 118);
-    max-height: 200px;
 }
 
 .parag {
@@ -229,6 +228,43 @@ iframe {
     background-size: 13px;
     background-position-y: 4px;
 }
+
+.article {
+    width: auto;
+    margin: 8px;
+    padding: 4px;
+    background-color: #fb1fa7;
+    border-radius: 5px;
+}
+
+.article h2 {
+    color: #13ff9d;
+    background-color: #fe61c2;
+    padding: 4px;
+    margin : 0;
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+
+.articleup {
+    background-color: #fe61c2;
+    margin: 4px 0;
+    border-radius: 5px;
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.articleup .image {
+    width: 48%;
+    border-radius: 5px;
+}
+
+.articleup .ytbjojo {
+    width: 48%;
+}
+
+
 
 
 /* FOOTER 
@@ -248,6 +284,7 @@ footer {
     bottom: 0;
     border: 0px;
     width: 100%;
+    height: 50px;
     flex-direction: column;
     background: black;
     border-top: 1px hidden beige;
@@ -266,8 +303,23 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     position: relative;
     font-size: small;
+}
+
+.fp {
+    display: flex;
+
+}
+
+.fp *{
+    margin: 2px;
+}
+
+.footerico {
+    width: 16px;
+    height: 16px;
 }
 
 
