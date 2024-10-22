@@ -109,6 +109,7 @@ body {
     border: var(--outline-content);
     padding: 0;
     background-image: url(../Ressources/sparkle.gif);
+    background-attachment: fixed;
     min-height: 80vh;
     filter: blur(); /* ???? Ne pas supprimer le footer bug sans ça */
     margin-top: 15px;
@@ -269,6 +270,7 @@ iframe {
     width: 48%;
     height: max-content;
     border-radius: 5px;
+    border: #393939 solid 1px;
 }
 
 .articleup iframe {
@@ -330,6 +332,8 @@ footer {
 
 .fp {
     display: flex;
+    height: 60px;
+    align-items: center;
 
 }
 
