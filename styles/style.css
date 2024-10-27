@@ -118,7 +118,7 @@ body {
 }
 
 #content-wrap {
-    height: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -140,7 +140,7 @@ body {
     border: 1px solid #1b1b1b;
     backdrop-filter: blur(2px);
     width: 90%;
-    height: 50%;
+    height: 50vh;
     border-radius: 4px;
     padding: 0px 5px;
     margin: 1%;
@@ -252,7 +252,7 @@ iframe {
 }
 
 .article {
-    width: auto;
+    width: 90%;
     margin: 1%;
     padding: 8px;
     border-radius: 5px;
@@ -306,7 +306,7 @@ iframe {
 
 
 .footergap {
-    --footer-heigth : 100px;
+    --footer-heigth : 10vh;
     height: var(--footer-heigth);
 }
 
