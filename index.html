@@ -3,7 +3,7 @@
 
 <head>
     <script src="script.js"></script>
-    <link rel="shortcut icon" href="Ressources\favicon\frame_19_delay-0.08s.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Ressources/favicon/frame_19_delay-0.08s.png" type="image/x-icon">
     <meta charset="utf-8">
     <title>Boyo</title>
     <link rel="stylesheet" href="styles/style.css">
@@ -23,8 +23,11 @@
                 </a>
                 <img class="internet" src="Ressources/internet.gif" width="70">
             </header>
+
+
+
             <div>
-                <marquee behavior="" direction=""><a href=>byitter.com</a></marquee>
+                <marquee behavior="" direction="" class="news-ticker"><a href="#">byitter.com</a></marquee>
             </div>
 
             <div class="sidebar"></div>
@@ -32,44 +35,59 @@
             <div class="desk">
                 <div class="shortcut">
                     <a href="jjba.html"><span class="ico-link"></span></a>
-                    <div class="ico"> <img src="Ressources/Jolyne_icon.webp" alt="star"> </div>
+                    <div class="ico">
+                        <img src="Ressources/Jolyne_icon.webp" alt="Jolyne icon">
+                    </div>
                     <p>Jolyne</p>
                 </div>
 
                 <div class="shortcut">
                     <a href="goaty.html"><span class="ico-link"></span></a>
-                    <div class="ico"><img src="Ressources/soniccoin.gif" alt="pièce sonic"> </div>
+                    <div class="ico">
+                        <img src="Ressources/soniccoin.gif" alt="Sonic coin">
+                    </div>
                     <p>myGame.exe</p>
                 </div>
-                
+
             </div>
+
 
 
             <footer>
                 <div class="info">
                     <div class="fp">
-                        <img class="footerico" src="Ressources/email.gif" alt="mail icon">
+                        <img class="footerico" src="Ressources/email.gif" alt="Email icon">
                         <p>E-mail :</p>
                         <a href="mailto:isaaklm6@gmail.com">isaaklm6</a>
                     </div>
                     <div class="fp">
-                        <img class="footerico" src="Ressources/github.gif" alt="github icon">
-                        <p>github :</p>
+                        <img class="footerico" src="Ressources/github.gif" alt="GitHub icon">
+                        <p>GitHub :</p>
                         <a href="https://github.com/M-Boyo">M-Boyo</a>
                     </div>
                     <div class="fp">
-                        <img class="footerico" src="Ressources/dollars.gif" alt="money icon">
-                        <p>paypal :</p>
+                        <img class="footerico" src="Ressources/dollars.gif" alt="PayPal icon">
+                        <p>PayPal :</p>
                         <a href="https://paypal.me/Boyoo?country.x=FR&locale.x=fr_FR">@Boyoo</a>
                     </div>
-
-                    
                 </div>
             </footer>
             <div class="footergap"></div>
 
         </div>
 
+        <div class="audio-player-container">
+            <div class="audio-player">
+                <div class="now-playing">
+                    <p>Now playing : </p>
+                    <marquee behavior="" direction="">Music</marquee>
+                </div>
+                <div class="audio-controls">
+                    <button>|<</button><button>></button> <button>||</button> <button>>|</button>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 
 </body>
